@@ -2,6 +2,7 @@ import React from 'react';
 import Hello from "./components/Hello";
 import Wrapper from "./components/Wrapper";
 import Counter from "./components/Counter";
+import InputSample from "./components/InputSample";
 
 function App() {
   const name = 'Hello React'
@@ -23,7 +24,8 @@ function App() {
           />
         <Hello/>
         <div style={style}>{name}</div>
-        <Counter/>
+        <Counter />
+        <InputSample />
       </Wrapper>
   );
 }
