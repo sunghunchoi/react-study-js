@@ -16,11 +16,16 @@ function InputSample() {
         // e.target 에서 name 과 value 를 추출.
         const { value, name } = e.target;
         setInputs({
+            // ... 문법은 spread 문법 .
+            // 객체의 내용을 모두 펼처서 기존 객체를 복사해줌.
+            // 불변성을 지키기 위해서.
             ...inputs,    // 기존의 input 객체를 복사한 뒤
             [name] : value //  name 키를 가진 값을 value 로 설정.
         })
     };
 
+    // 리액트에서 객체를 업데이트하게 될 때에는 기존 객체를 직접 수정하면 안되고.
+    // 새로운 객체를 만들어서, 새 객체에 변화를 주어야 컴포넌트에 반영이 됨.
     const onReset = () => {
         setInputs({
             name: '',
