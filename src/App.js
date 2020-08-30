@@ -6,6 +6,8 @@ import InputSample from "./components/InputSample";
 import UseRefInputSample from "./components/UseRefInputSample";
 import UserList from "./components/UserList";
 import CreateUser from "./components/CreateUser";
+import CounterUseReducer from "./components/CounterUseReducer";
+import ReducerApp from "./components/ReducerApp";
 
 function App() {
   // const name = 'Hello React'
@@ -136,18 +138,20 @@ function App() {
         {/*<Counter />*/}
         {/*<InputSample />*/}
         {/*<UseRefInputSample/>*/}
-        <CreateUser
-            username={username}
-            email={email}
-            onChange={onChange}
-            onCreate={onCreate}
-        />
-        <UserList
-            users={users}
-            onRemove = {onRemove}
-            onToggle = {onToggle}
-        />
-        <div>활성 사용자 수: {count}</div>
+        {/*<CreateUser*/}
+        {/*    username={username}*/}
+        {/*    email={email}*/}
+        {/*    onChange={onChange}*/}
+        {/*    onCreate={onCreate}*/}
+        {/*/>*/}
+        {/*<UserList*/}
+        {/*    users={users}*/}
+        {/*    onRemove = {onRemove}*/}
+        {/*    onToggle = {onToggle}*/}
+        {/*/>*/}
+        {/*<div>활성 사용자 수: {count}</div>*/}
+        {/*<CounterUseReducer />*/}
+        <ReducerApp />
       </Wrapper>
   );
 }
